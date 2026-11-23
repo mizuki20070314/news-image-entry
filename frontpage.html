@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #f7f1e3;
+    color: #17150f;
+    display: flex; flex-direction: column;
+  }
+  .accent { background: #8f1d1d; color: #f7f1e3; }
+
+  /* Masthead */
+  .masthead { text-align: center; padding: 14px 28px 10px; border-bottom: 3px double #17150f; }
+  .masthead .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 4px; color: #55503f; }
+  .masthead h1 { font-size: 64px; line-height: 1; font-weight: normal; letter-spacing: 2px; font-family: Georgia, serif; }
+  .masthead .datebar { display: flex; justify-content: space-between; font-family: Arial, Helvetica, sans-serif; font-size: 10.5px; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 8px; color: #33302a; }
+
+  /* Lead story */
+  .lead { display: flex; gap: 18px; padding: 16px 28px 14px; border-bottom: 1px solid #c9c0a8; }
+  .lead .main { flex: 2.1; }
+  .lead .tag { display: inline-block; font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 3px 8px; margin-bottom: 8px; }
+  .lead h2 { font-size: 40px; line-height: 1.04; font-weight: normal; margin-bottom: 10px; }
+  .lead h2 em { font-style: italic; }
+  .lead .deck { font-size: 14.5px; line-height: 1.45; color: #33302a; font-style: italic; }
+  .lead .facts { margin-top: 12px; border-top: 2px solid #17150f; padding-top: 8px; font-size: 12.5px; line-height: 1.5; color: #33302a; }
+  .lead .facts b { font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 4px; color: #8f1d1d; }
+  .lead .side { flex: 1; border-left: 1px solid #c9c0a8; padding-left: 18px; }
+  .lead .side .story { margin-bottom: 12px; }
+  .lead .side .story h3 { font-size: 17px; line-height: 1.12; font-weight: bold; margin-bottom: 3px; }
+  .lead .side .story p { font-size: 11.5px; line-height: 1.4; color: #444034; }
+
+  /* Regional columns */
+  .regions { flex: 1; display: flex; gap: 0; padding: 12px 28px 10px; }
+  .region { flex: 1; padding: 0 14px; }
+  .region:first-child { padding-left: 0; }
+  .region:last-child { padding-right: 0; }
+  .region:not(:last-child) { border-right: 1px solid #d8d0ba; }
+  .region .label { font-family: Arial, sans-serif; font-size: 10.5px; letter-spacing: 2.5px; text-transform: uppercase; color: #f7f1e3; background: #17150f; display: block; text-align: center; padding: 3px 0; margin-bottom: 10px; }
+  .region .story { margin-bottom: 11px; }
+  .region .story h4 { font-size: 15px; line-height: 1.15; font-weight: bold; margin-bottom: 2px; }
+  .region .story p { font-size: 10.8px; line-height: 1.38; color: #444034; }
+  .region .story h4 .num { color: #8f1d1d; font-family: Arial, sans-serif; font-size: 10px; }
+
+  /* Stats strip */
+  .stats { display: flex; border-top: 3px solid #17150f; margin: 0 28px; padding: 10px 0 12px; gap: 0; }
+  .stat { flex: 1; text-align: center; border-right: 1px solid #d8d0ba; padding: 0 8px; }
+  .stat:last-child { border-right: none; }
+  .stat .v { font-size: 26px; font-family: Georgia, serif; }
+  .stat .k { font-family: Arial, sans-serif; font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: #55503f; margin-top: 2px; }
+
+  /* Footer */
+  .footer { margin-top: auto; border-top: 1px solid #c9c0a8; padding: 8px 28px 10px; display: flex; justify-content: space-between; font-family: Arial, sans-serif; font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: #55503f; }
+</style>
+</head>
+<body>
+
+  <div class="masthead">
+    <div class="kicker">One Day &middot; One Page &middot; Every Continent</div>
+    <h1>THE WORLD</h1>
+    <div class="datebar">
+      <span>No. 23,116</span>
+      <span>Monday, November 23, 2026</span>
+      <span>Antalya &middot; Atlanta &middot; Hanoi &middot; Benghazi</span>
+    </div>
+  </div>
+
+  <div class="lead">
+    <div class="main">
+      <span class="tag accent">Climate &middot; The Lead</span>
+      <h2>COP31 collapses: <em>no deal</em> as EU walks from Antalya text</h2>
+      <div class="deck">UN climate summit fails for the first time since 2009 after 48 hours of overtime, leaving the world without an accord.</div>
+      <div class="facts">
+        <b>Why it failed</b>
+        The draft dropped any phase-out of fossil fuels, pointing only to the old COP28 language. The EU rejected it; smaller states walked; the gavel fell on a summit with no decision adopted.
+      </div>
+    </div>
+    <div class="side">
+      <div class="story">
+        <h3>Geneva edges toward Ukraine plan</h3>
+        <p>Talks on a war-ending blueprint near a breakthrough; Washington set a Nov 27 deadline to accept it.</p>
+      </div>
+      <div class="story">
+        <h3>Europe moves to seat Putin at G8</h3>
+        <p>Moscow&rsquo;s return to the table is among concessions floated in Europe&rsquo;s counter-deal on Ukraine.</p>
+      </div>
+      <div class="story">
+        <h3>Israel: coalition talks end with no deal</h3>
+        <p>Netanyahu and Eisenkot part after four hours; a December 6 deadline now looms over Jerusalem.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="regions">
+    <div class="region">
+      <span class="label">Americas</span>
+      <div class="story">
+        <h4>Delta outage strands Atlanta</h4>
+        <p>A weight-and-balance system failure delayed 3,500+ US flights and forced an FAA ground stop.</p>
+      </div>
+      <div class="story">
+        <h4>FBI probes own case database</h4>
+        <p>An apparent breach of the bureau&rsquo;s criminal records system is under investigation.</p>
+      </div>
+      <div class="story">
+        <h4>Cyclone Fina batters Australia&rsquo;s north</h4>
+        <p>The storm crossed between Darwin and the Tiwi Islands, cutting a trail of damage.</p>
+      </div>
+    </div>
+    <div class="region">
+      <span class="label">Middle East</span>
+      <div class="story">
+        <h4>Hormuz on a knife&rsquo;s edge</h4>
+        <p>Two supertankers hit naval mines; a US decision on renewed strikes is a week away.</p>
+      </div>
+      <div class="story">
+        <h4>Warship ablaze in Benghazi</h4>
+        <p>A sea drone struck a Russian vessel at dock; ten injured, none claimed the attack.</p>
+      </div>
+      <div class="story">
+        <h4>Hezbollah chief killed in Beirut strike</h4>
+        <p>Israel says a senior commander died as a suburb of the capital was hit again.</p>
+      </div>
+    </div>
+    <div class="region">
+      <span class="label">Asia</span>
+      <div class="story">
+        <h4>Vietnam floods kill 90</h4>
+        <p>Landslides devastate mountain provinces; Dak Lak alone lost more than 60 people.</p>
+      </div>
+      <div class="story">
+        <h4>Seoul minister quits over exam chaos</h4>
+        <p>Rule changes before the CSAT cost the education minister his post after an AI cheating row.</p>
+      </div>
+      <div class="story">
+        <h4>Gukesh opens title defence with black</h4>
+        <p>The world chess championship begins in Geneva against challenger Sindarov.</p>
+      </div>
+    </div>
+    <div class="region">
+      <span class="label">Africa &amp; Pacific</span>
+      <div class="story">
+        <h4>Indonesia factory fire: 24 dead, 30 missing</h4>
+        <p>A candy factory blaze in Serang left remains unrecognizable; search resumes today.</p>
+      </div>
+      <div class="story">
+        <h4>Nigeria: 50 children escape kidnappers</h4>
+        <p>Dozens still missing as mass-abduction gangs face a widening crackdown.</p>
+      </div>
+      <div class="story">
+        <h4>Sudan drones hit UN building in Khartoum</h4>
+        <p>Riyadh condemned strikes on the capital as the war&rsquo;s reach grows.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="v">48h</div><div class="k">Overtime at COP31</div></div>
+    <div class="stat"><div class="v">3,500</div><div class="k">US flights delayed</div></div>
+    <div class="stat"><div class="v">90</div><div class="k">Dead in Vietnam floods</div></div>
+    <div class="stat"><div class="v">54</div><div class="k">Missing, factory &amp; sea</div></div>
+    <div class="stat"><div class="v">4&ndash;0</div><div class="k">Liverpool over United</div></div>
+  </div>
+
+  <div class="footer">
+    <span>World news of November 23, 2026 &middot; drawn in one page</span>
+    <span>Sport: Onosato takes Kyushu playoff &middot; India 7&ndash;0 Thailand</span>
+  </div>
+
+</body>
+</html>
