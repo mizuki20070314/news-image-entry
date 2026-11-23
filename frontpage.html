@@ -12,48 +12,55 @@
     display: flex; flex-direction: column;
   }
   .accent { background: #8f1d1d; color: #f7f1e3; }
+  .sans { font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; }
 
   /* Masthead */
-  .masthead { text-align: center; padding: 14px 28px 10px; border-bottom: 3px double #17150f; }
-  .masthead .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 4px; color: #55503f; }
-  .masthead h1 { font-size: 64px; line-height: 1; font-weight: normal; letter-spacing: 2px; font-family: Georgia, serif; }
-  .masthead .datebar { display: flex; justify-content: space-between; font-family: Arial, Helvetica, sans-serif; font-size: 10.5px; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 8px; color: #33302a; }
+  .masthead { text-align: center; padding: 12px 28px 8px; border-bottom: 3px double #17150f; }
+  .masthead .kicker { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 3px; color: #55503f; }
+  .masthead h1 { font-size: 72px; line-height: 0.95; font-weight: normal; letter-spacing: 3px; }
+  .masthead .datebar { display: flex; justify-content: space-between; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; letter-spacing: 1.6px; text-transform: uppercase; margin-top: 8px; color: #33302a; padding-top: 6px; border-top: 1px solid #8f1d1d; }
+  .masthead .datebar .mid { color: #8f1d1d; font-weight: 700; }
 
   /* Lead story */
-  .lead { display: flex; gap: 18px; padding: 16px 28px 14px; border-bottom: 1px solid #c9c0a8; }
-  .lead .main { flex: 2.1; }
-  .lead .tag { display: inline-block; font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 3px 8px; margin-bottom: 8px; }
-  .lead h2 { font-size: 40px; line-height: 1.04; font-weight: normal; margin-bottom: 10px; }
-  .lead h2 em { font-style: italic; }
-  .lead .deck { font-size: 14.5px; line-height: 1.45; color: #33302a; font-style: italic; }
-  .lead .facts { margin-top: 12px; border-top: 2px solid #17150f; padding-top: 8px; font-size: 12.5px; line-height: 1.5; color: #33302a; }
-  .lead .facts b { font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 4px; color: #8f1d1d; }
+  .lead { display: flex; gap: 20px; padding: 14px 28px 12px; border-bottom: 1px solid #c9c0a8; }
+  .lead .main { flex: 2.05; }
+  .lead .tag { display: inline-block; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10px; letter-spacing: 2.2px; text-transform: uppercase; padding: 3px 9px; margin-bottom: 9px; font-weight: 700; }
+  .lead h2 { font-size: 46px; line-height: 1.0; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.3px; }
+  .lead h2 em { font-style: italic; font-weight: 700; }
+  .lead .deck { font-size: 14.5px; line-height: 1.4; color: #33302a; font-style: italic; }
+  .lead .facts { margin-top: 10px; border-top: 2px solid #17150f; padding-top: 7px; font-size: 12.5px; line-height: 1.45; color: #33302a; }
+  .lead .facts b { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10px; letter-spacing: 1.6px; text-transform: uppercase; display: block; margin-bottom: 3px; color: #8f1d1d; font-weight: 700; }
   .lead .side { flex: 1; border-left: 1px solid #c9c0a8; padding-left: 18px; }
-  .lead .side .story { margin-bottom: 12px; }
-  .lead .side .story h3 { font-size: 17px; line-height: 1.12; font-weight: bold; margin-bottom: 3px; }
-  .lead .side .story p { font-size: 11.5px; line-height: 1.4; color: #444034; }
+  .lead .side .story { margin-bottom: 10px; }
+  .lead .side .story h3 { font-size: 18px; line-height: 1.1; font-weight: 700; margin-bottom: 2px; }
+  .lead .side .story p { font-size: 11.5px; line-height: 1.35; color: #444034; }
+
+  /* World map strip */
+  .mapstrip { padding: 6px 28px 4px; border-bottom: 1px solid #c9c0a8; }
+  .mapstrip .cap { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9px; letter-spacing: 2.4px; text-transform: uppercase; color: #55503f; margin-bottom: 4px; }
+  .mapstrip svg { display: block; width: 100%; height: 92px; }
 
   /* Regional columns */
-  .regions { flex: 1; display: flex; gap: 0; padding: 12px 28px 10px; }
+  .regions { flex: 1; display: flex; gap: 0; padding: 12px 28px 8px; }
   .region { flex: 1; padding: 0 14px; }
   .region:first-child { padding-left: 0; }
   .region:last-child { padding-right: 0; }
-  .region:not(:last-child) { border-right: 1px solid #d8d0ba; }
-  .region .label { font-family: Arial, sans-serif; font-size: 10.5px; letter-spacing: 2.5px; text-transform: uppercase; color: #f7f1e3; background: #17150f; display: block; text-align: center; padding: 3px 0; margin-bottom: 10px; }
-  .region .story { margin-bottom: 11px; }
-  .region .story h4 { font-size: 15px; line-height: 1.15; font-weight: bold; margin-bottom: 2px; }
-  .region .story p { font-size: 10.8px; line-height: 1.38; color: #444034; }
-  .region .story h4 .num { color: #8f1d1d; font-family: Arial, sans-serif; font-size: 10px; }
+  .region:not(:last-child) { border-right: 1px solid #9a8f75; }
+  .region .label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10.5px; letter-spacing: 2.6px; text-transform: uppercase; color: #f7f1e3; background: #17150f; display: block; text-align: center; padding: 3px 0; margin-bottom: 9px; font-weight: 700; }
+  .region .story { margin-bottom: 10px; }
+  .region .story h4 { font-size: 16px; line-height: 1.12; font-weight: 700; margin-bottom: 2px; }
+  .region .story p { font-size: 10.8px; line-height: 1.35; color: #444034; }
+  .region .story h4 .num { color: #8f1d1d; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10px; font-weight: 700; }
 
   /* Stats strip */
-  .stats { display: flex; border-top: 3px solid #17150f; margin: 0 28px; padding: 10px 0 12px; gap: 0; }
-  .stat { flex: 1; text-align: center; border-right: 1px solid #d8d0ba; padding: 0 8px; }
+  .stats { display: flex; border-top: 3px solid #17150f; margin: 0 28px; padding: 9px 0 10px; gap: 0; background: #efe7d3; }
+  .stat { flex: 1; text-align: center; border-right: 1px solid #c9c0a8; padding: 0 6px; }
   .stat:last-child { border-right: none; }
-  .stat .v { font-size: 26px; font-family: Georgia, serif; }
-  .stat .k { font-family: Arial, sans-serif; font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: #55503f; margin-top: 2px; }
+  .stat .v { font-size: 28px; font-family: Georgia, serif; color: #8f1d1d; font-weight: 700; line-height: 1; }
+  .stat .k { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: #2a261f; margin-top: 3px; font-weight: 600; }
 
   /* Footer */
-  .footer { margin-top: auto; border-top: 1px solid #c9c0a8; padding: 8px 28px 10px; display: flex; justify-content: space-between; font-family: Arial, sans-serif; font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: #55503f; }
+  .footer { margin-top: auto; border-top: 1px solid #c9c0a8; padding: 7px 28px 8px; display: flex; justify-content: space-between; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: #55503f; }
 </style>
 </head>
 <body>
@@ -63,7 +70,7 @@
     <h1>THE WORLD</h1>
     <div class="datebar">
       <span>No. 23,116</span>
-      <span>Monday, November 23, 2026</span>
+      <span class="mid">Monday, November 23, 2026</span>
       <span>Antalya &middot; Atlanta &middot; Hanoi &middot; Benghazi</span>
     </div>
   </div>
@@ -75,17 +82,17 @@
       <div class="deck">UN climate summit fails for the first time since 2009 after 48 hours of overtime, leaving the world without an accord.</div>
       <div class="facts">
         <b>Why it failed</b>
-        The draft dropped any phase-out of fossil fuels, pointing only to the old COP28 language. The EU rejected it; smaller states walked; the gavel fell on a summit with no decision adopted.
+        The draft dropped any phase-out of fossil fuels, pointing only to old COP28 language. The EU rejected it; smaller states walked; the gavel fell on a summit with no decision adopted.
       </div>
     </div>
     <div class="side">
       <div class="story">
         <h3>Geneva edges toward Ukraine plan</h3>
-        <p>Talks on a war-ending blueprint near a breakthrough; Washington set a Nov 27 deadline to accept it.</p>
+        <p>Talks on a war-ending blueprint near a breakthrough; Washington set a Nov 27 deadline.</p>
       </div>
       <div class="story">
         <h3>Europe moves to seat Putin at G8</h3>
-        <p>Moscow&rsquo;s return to the table is among concessions floated in Europe&rsquo;s counter-deal on Ukraine.</p>
+        <p>Moscow&rsquo;s return to the table is among concessions floated in Europe&rsquo;s counter-deal.</p>
       </div>
       <div class="story">
         <h3>Israel: coalition talks end with no deal</h3>
@@ -94,12 +101,55 @@
     </div>
   </div>
 
+  <div class="mapstrip">
+    <div class="cap">Where today&rsquo;s stories happened</div>
+    <svg viewBox="0 0 1024 92" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+      <path d="M110,16 L250,10 L295,28 L285,52 L225,60 L175,56 L125,46 Z" fill="#e7dfc9" stroke="#a89e84" stroke-width="0.8"/>
+      <path d="M225,60 L265,66 L280,90 L245,96 L210,86 L215,68 Z" fill="#e7dfc9" stroke="#a89e84" stroke-width="0.8"/>
+      <path d="M465,20 L555,16 L575,30 L535,40 L475,38 Z" fill="#e7dfc9" stroke="#a89e84" stroke-width="0.8"/>
+      <path d="M485,42 L555,40 L575,68 L535,92 L490,86 L470,60 Z" fill="#e7dfc9" stroke="#a89e84" stroke-width="0.8"/>
+      <path d="M575,16 L755,12 L815,36 L795,60 L715,68 L635,56 L585,40 Z" fill="#e7dfc9" stroke="#a89e84" stroke-width="0.8"/>
+      <path d="M775,70 L825,68 L840,82 L805,88 L770,82 Z" fill="#e7dfc9" stroke="#a89e84" stroke-width="0.8"/>
+      <!-- hotspots -->
+      <g>
+        <circle cx="232" cy="44" r="3.2" fill="#8f1d1d"/>
+        <line x1="232" y1="44" x2="232" y2="26" stroke="#8f1d1d" stroke-width="0.8"/>
+        <text x="232" y="22" text-anchor="middle" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8.5" fill="#17150f" font-weight="700">Atlanta</text>
+      </g>
+      <g>
+        <circle cx="562" cy="28" r="3.2" fill="#8f1d1d"/>
+        <line x1="562" y1="28" x2="562" y2="12" stroke="#8f1d1d" stroke-width="0.8"/>
+        <text x="562" y="9" text-anchor="middle" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8.5" fill="#17150f" font-weight="700">Antalya</text>
+      </g>
+      <g>
+        <circle cx="510" cy="46" r="3.2" fill="#8f1d1d"/>
+        <line x1="510" y1="46" x2="510" y2="62" stroke="#8f1d1d" stroke-width="0.8"/>
+        <text x="510" y="72" text-anchor="middle" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8.5" fill="#17150f" font-weight="700">Benghazi</text>
+      </g>
+      <g>
+        <circle cx="608" cy="50" r="3.2" fill="#8f1d1d"/>
+        <line x1="608" y1="50" x2="608" y2="66" stroke="#8f1d1d" stroke-width="0.8"/>
+        <text x="608" y="76" text-anchor="middle" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8.5" fill="#17150f" font-weight="700">Hormuz</text>
+      </g>
+      <g>
+        <circle cx="742" cy="48" r="3.2" fill="#8f1d1d"/>
+        <line x1="742" y1="48" x2="742" y2="32" stroke="#8f1d1d" stroke-width="0.8"/>
+        <text x="742" y="28" text-anchor="middle" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8.5" fill="#17150f" font-weight="700">Hanoi</text>
+      </g>
+      <g>
+        <circle cx="762" cy="78" r="3.2" fill="#8f1d1d"/>
+        <line x1="762" y1="78" x2="762" y2="62" stroke="#8f1d1d" stroke-width="0.8"/>
+        <text x="762" y="58" text-anchor="middle" font-family="'Helvetica Neue',Arial,sans-serif" font-size="8.5" fill="#17150f" font-weight="700">Serang</text>
+      </g>
+    </svg>
+  </div>
+
   <div class="regions">
     <div class="region">
       <span class="label">Americas</span>
       <div class="story">
         <h4>Delta outage strands Atlanta</h4>
-        <p>A weight-and-balance system failure delayed 3,500+ US flights and forced an FAA ground stop.</p>
+        <p>A weight-and-balance failure delayed 3,500+ US flights and forced an FAA ground stop.</p>
       </div>
       <div class="story">
         <h4>FBI probes own case database</h4>
